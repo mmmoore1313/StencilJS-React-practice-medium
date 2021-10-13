@@ -44,9 +44,15 @@
 >>>>> ``` 
 >>>> </details>
 >>>> <details>
->>>>  <summary>3.2- Create and fill out file component<code>.tsx</code></summary>
+>>>>  <summary>3.2- Create and fill out file <code>component.tsx</code></summary>
 >>>>
->>>>> 3.2.1- `touch src/components/my-accordion/my-accordion.tsx`  
+>>>>> <details>
+>>>>>  <summary>3.2.1- Create <code>component.tsx</code>
+>>>>>
+>>>>>> ``` 
+>>>>>> touch src/components/my-accordion/my-accordion.tsx
+>>>>>> ``` 
+>>>>> </details>  
 >>>>> <details>
 >>>>>  <summary>3.2.2- <code>my-accordion.tsx</code></summary>
 >>>>>
@@ -105,7 +111,13 @@
 >>>> <details>
 >>>>  <summary>3.3- Create a component CSS file</summary>
 >>>>
->>>>> 3.3.1- `touch src/components/my-accordion/my-accordion.scss`  
+>>>>> <details>
+>>>>>  <summary>3.3.1- Create <code>component.css</code></summary>
+>>>>>
+>>>>>> ``` 
+>>>>>> touch src/components/my-accordion/my-accordion.scss
+>>>>>> ``` 
+>>>>> </details> 
 >>>>> <details>
 >>>>>  <summary>3.3.2- Fill out component CSS file</summary>
 >>>>>
