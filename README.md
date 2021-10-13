@@ -37,7 +37,7 @@
 >>>  <summary>3. Create a component.</summary>
 >>>
 >>>> <details>
->>>>  <summary>3.1- Create <code>component</code> file</summary>
+>>>>  <summary>3.1- Create <code>component</code> directory</summary>
 >>>>
 >>>>> ``` 
 >>>>> mkdir src/components/my-accordion
