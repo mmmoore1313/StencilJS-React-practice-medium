@@ -164,6 +164,32 @@
 >>>>>> ``` 
 >>>>> </details>
 >>>> </details>
+>>>> <details>
+>>>>  <summary>3.4- Insert the <code>component</code> into the <code>body</code> <code>index.html</code></summary>
+>>>>
+>>>>> ``` 
+>>>>> <body>
+>>>>>   <my-accordion width='100%' 
+>>>>>                 label='Bacon Ipsum'
+>>>>>                 color='pink'
+>>>>>                 description="Bacon ipsum dolor amet pork chop sausage turkey spare ribs ham hock cupim pork loin capicola bacon ham filet mignon prosciutto boudin turducken. Shank corned beef burgdoggen jowl ribeye. Ham pork pastrami rump meatball buffalo venison andouille picanha fatback pork loin. Venison doner porchetta, chicken leberkas fatback burgdoggen ham andouille landjaeger alcatra. Pork belly pork jerky prosciutto leberkas tail salami tongue frankfurter turducken short loin flank."></my-accordion>
+>>>>>   <my-accordion width='100%'
+>>>>>                 label='Cat Ipsum'
+>>>>>                 color='aquamarine'
+>>>>>                 description="Human give me attention meow i want to go outside let me go outside nevermind inside is better but cats are cute flex claws on the human's belly and purr like a lawnmower find something else more interesting, yet lick sellotape lick butt and make a weird face. The cat was chasing the mouse lick the plastic bag for furrier and even more furrier hairball but scratch at door to be let outside, get let out then scratch at door immmediately after to be let back in. "></my-accordion>
+>>>>>   <my-accordion width='100%'
+>>>>>                 color='#eee'
+>>>>>                 description="I feel empty."></my-accordion>
+>>>>> </body>
+>>>>> ``` 
+>>>> </details>
+>>>> <details>
+>>>>  <summary>3.5- Run <code>npm start</code></summary>
+>>>>
+>>>>> ``` 
+>>>>> npm start
+>>>>> ``` 
+>>>> </details>
 
 
 
