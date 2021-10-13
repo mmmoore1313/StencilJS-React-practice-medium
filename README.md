@@ -22,7 +22,7 @@
 >>> <details>
 >>>  <summary>1. Create a project directory</summary>
 >>>
->>>> 1.1- `mkdir <projectname>`
+>>>> 1.1- `mkdir <projectname>`  
 >>>> 1.2- `cd <projectname>`
 >>> </details>
 >>> <details>
