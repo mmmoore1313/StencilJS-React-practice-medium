@@ -1,6 +1,6 @@
 import { Component, State, EventEmitter, Event, Prop, h } from '@stencil/core'
 
-@Compnent({
+@Component({
   tag: 'my-accordion',
   styleUrl: 'my-accordion.scss',
   shadow: true

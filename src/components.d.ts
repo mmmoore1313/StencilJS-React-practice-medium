@@ -6,6 +6,12 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface MyAccordion {
+        "color": string;
+        "description": string;
+        "label": string;
+        "width": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +28,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLMyAccordionElement extends Components.MyAccordion, HTMLStencilElement {
+    }
+    var HTMLMyAccordionElement: {
+        prototype: HTMLMyAccordionElement;
+        new (): HTMLMyAccordionElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +41,18 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "my-accordion": HTMLMyAccordionElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface MyAccordion {
+        "color"?: string;
+        "description"?: string;
+        "label"?: string;
+        "onOnToggle"?: (event: CustomEvent<any>) => void;
+        "width"?: string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +68,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "my-accordion": MyAccordion;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +76,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "my-accordion": LocalJSX.MyAccordion & JSXBase.HTMLAttributes<HTMLMyAccordionElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
