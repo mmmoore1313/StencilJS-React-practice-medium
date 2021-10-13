@@ -47,7 +47,7 @@
 >>>>  <summary>3.2- Create and fill out file <code>component.tsx</code></summary>
 >>>>
 >>>>> <details>
->>>>>  <summary>3.2.1- Create <code>component.tsx</code>
+>>>>>  <summary>3.2.1- Create <code>component.tsx</code></summary>
 >>>>>
 >>>>>> ``` 
 >>>>>> touch src/components/my-accordion/my-accordion.tsx
