@@ -34,5 +34,124 @@
 >>>> 2.4- Run `npm install`
 >>> </details>
 >>> <details>
->>>  <summary>
+>>>  <summary>3. Create a component.</summary>
+>>>
+>>>> <details>
+>>>>  <summary>3.1- Create <code>component</code> file</summary>
+>>>>
+>>>>> ``` 
+>>>>> mkdir src/components/my-accordion
+>>>>> ``` 
+>>>> </details>
+>>>> <details>
+>>>>  <summary>3.2- Create and fill out file component<code>.tsx</code></summary>
+>>>>
+>>>>> 3.2.1- `touch src/components/my-accordion/my-accordion.tsx`  
+>>>>> <details>
+>>>>>  <summary>3.2.2- <code>my-accordion.tsx</code></summary>
+>>>>>
+>>>>>> ``` 
+>>>>>> import { Component, State, EventEmitter, Event, Prop, h } from '@stencil/core';
+>>>>>> 
+>>>>>> @Component({
+>>>>>>   tag: 'my-accordion',
+>>>>>>   styleUrl: 'my-accordion.scss',
+>>>>>>   shadow: true
+>>>>>> })
+>>>>>> 
+>>>>>> export class MyComponent {
+>>>>>> 
+>>>>>>   @State() toggle: boolean = false;
+>>>>>> 
+>>>>>>   @Event() onToggle: EventEmitter;
+>>>>>> 
+>>>>>>   @Prop() label: string;
+>>>>>> 
+>>>>>>   @Prop() description: string;
+>>>>>> 
+>>>>>>   @Prop() width: string;
+>>>>>> 
+>>>>>>   @Prop() color: string;
+>>>>>> 
+>>>>>>   toggleComponent() {
+>>>>>>     this.toggle = !this.toggle;
+>>>>>>     this.onToggle.emit({ visible: this.toggle });
+>>>>>>   }
+>>>>>> 
+>>>>>>   render() {
+>>>>>> 
+>>>>>>     return (
+>>>>>>       <div>
+>>>>>>       <button class="accordion"
+>>>>>>       style={{
+>>>>>>         width: this.width,
+>>>>>>         backgroundColor: this.color,
+>>>>>>       }}
+>>>>>>       onClick={() => this.toggleComponent()}>
+>>>>>>       {this.label}
+>>>>>>       {this.toggle ? <span>&#9650;</span> : <span>&#9660;</span>}
+>>>>>>       </button>
+>>>>>>       <div class={`content-box ${this.toggle ? 'open' : 'close'}`}
+>>>>>>       style={{width: this.width}}>
+>>>>>>       <p>{this.description}</p>
+>>>>>>       </div>
+>>>>>>       </div>
+>>>>>>     )
+>>>>>>   }
+>>>>>> }
+>>>>>> ``` 
+>>>>> </details>
+>>>> </details>
+>>>> <details>
+>>>>  <summary>3.3- Create a component CSS file</summary>
+>>>>
+>>>>> 3.3.1- `touch src/components/my-accordion/my-accordion.scss`  
+>>>>> <details>
+>>>>>  <summary>3.3.2- Fill out component CSS file</summary>
+>>>>>
+>>>>>> ``` 
+>>>>>> * {
+>>>>>>     font-family: 'Lato', sans-serif;
+>>>>>> }
+>>>>>> 
+>>>>>> .container {
+>>>>>>     display: flex;
+>>>>>>     flex-direction: column;
+>>>>>>     justify-content: center;
+>>>>>>     align-items: center
+>>>>>> }
+>>>>>> 
+>>>>>> .accordion {
+>>>>>>     cursor: pointer;
+>>>>>>     padding: 18px;
+>>>>>>     text-align: left;
+>>>>>>     border-radius: 20px;
+>>>>>>     font-size: 1.2rem;
+>>>>>>     font-weight: bold;
+>>>>>>     outline: 0;
+>>>>>>     span {
+>>>>>>         float: right;
+>>>>>>     }
+>>>>>> }
+>>>>>>  
+>>>>>>  .open {
+>>>>>>     display: block;
+>>>>>>     height: auto;
+>>>>>>     border-radius: 20px;
+>>>>>>     border: 0.5px solid rgb(199, 197, 197);
+>>>>>>     width: 200px;
+>>>>>>  }
+>>>>>> 
+>>>>>>  p {
+>>>>>>     padding: 18px;
+>>>>>>  }
+>>>>>> 
+>>>>>>  .close {
+>>>>>>     display: none;
+>>>>>>  }
+>>>>>> ``` 
+>>>>> </details>
+>>>> </details>
+
+
 
