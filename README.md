@@ -109,17 +109,17 @@
 >>>>> </details>
 >>>> </details>
 >>>> <details>
->>>>  <summary>3.3- Create a component CSS file</summary>
+>>>>  <summary>3.3- Create a <code>component.scss</code> file</summary>
 >>>>
 >>>>> <details>
->>>>>  <summary>3.3.1- Create <code>component.css</code></summary>
+>>>>>  <summary>3.3.1- Create <code>component.scss</code></summary>
 >>>>>
 >>>>>> ``` 
 >>>>>> touch src/components/my-accordion/my-accordion.scss
 >>>>>> ``` 
 >>>>> </details> 
 >>>>> <details>
->>>>>  <summary>3.3.2- Fill out component CSS file</summary>
+>>>>>  <summary>3.3.2- Fill out <code>component.scss</code> file</summary>
 >>>>>
 >>>>>> ``` 
 >>>>>> * {
