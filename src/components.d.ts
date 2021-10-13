@@ -50,7 +50,7 @@ declare namespace LocalJSX {
         "color"?: string;
         "description"?: string;
         "label"?: string;
-        "onOnToggle"?: (event: CustomEvent<any>) => void;
+        "onTiggle"?: (event: CustomEvent<any>) => void;
         "width"?: string;
     }
     interface MyComponent {

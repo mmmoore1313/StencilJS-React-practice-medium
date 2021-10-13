@@ -10,7 +10,7 @@ export class MyComponent {
 
   @State() toggle: boolean = false
 
-  @Event() onToggle: EventEmitter
+  @Event() tiggle: EventEmitter
 
   @Prop() label: string
 
@@ -22,7 +22,7 @@ export class MyComponent {
 
   toggleComponent() {
     this.toggle = !this.toggle
-    this.onToggle.emit({ visible: this.toggle })
+    this.tiggle.emit({ visible: this.toggle })
   }
 
   render() {
