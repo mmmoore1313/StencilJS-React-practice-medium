@@ -192,21 +192,21 @@
 >>>> </details>
 >>>> <details>
 >>>>  <summary>3.6- Publish your package</summary>
+>>>>
+>>>>> <details>
+>>>>>  <summary>3.6.1- Build your component</summary>
 >>>>>
->>>>>> <details>
->>>>>>  <summary>3.6.1- Build your component</summary>
->>>>>>
->>>>>>> ``` 
->>>>>>> npm run build
->>>>>>> ``` 
->>>>>> </details>
->>>>>> <details>
->>>>>>  <summary>3.6.2- Publish your compnent</summary>
->>>>>>
->>>>>>> ``` 
->>>>>>> npm publish
->>>>>>> ``` 
->>>>>> </details>
+>>>>>> ``` 
+>>>>>> npm run build
+>>>>>> ``` 
 >>>>> </details>
+>>>>> <details>
+>>>>>  <summary>3.6.2- Publish your compnent</summary>
+>>>>>
+>>>>>> ``` 
+>>>>>> npm publish
+>>>>>> ``` 
+>>>>> </details>
+>>>> </details>
 
 
