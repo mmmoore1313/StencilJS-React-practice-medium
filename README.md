@@ -220,5 +220,21 @@
 >>>>> npx create-react-app appname
 >>>>> ``` 
 >>>> </details>
+>>>> <details>
+>>>>  <summary>4.2- Download dependencies</summary>
+>>>>
+>>>>> ``` 
+>>>>> npm install
+>>>>> ``` 
+>>>> </details>
+>>>> <details>
+>>>>  <summary>4.3- Install component package</summary>
+>>>>
+>>>>> ``` 
+>>>>> npm install accordion-stencil-component --save
+>>>>> ``` 
+>>>> </details>
+
+
 
 
