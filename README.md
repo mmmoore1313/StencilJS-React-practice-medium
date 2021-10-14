@@ -191,7 +191,7 @@
 >>>>> ``` 
 >>>> </details>
 >>>> <details>
->>>>> <summary>3.6- Publish your package</summary>
+>>>>  <summary>3.6- Publish your package</summary>
 >>>>>
 >>>>>> <details>
 >>>>>>  <summary>3.6.1- Build your component</summary>
