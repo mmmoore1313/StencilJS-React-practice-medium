@@ -244,9 +244,8 @@
 >>>>> import App from './App';
 >>>>> import registerServiceWorker from './registerServiceWorker';
 >>>>> 
->>>>> // test-component is the name of our made up Web Component that we have
->>>>> // published to npm:
 >>>>> import { applyPolyfills, defineCustomElements } from 'accordion-stencil-component/loader';
+>>>>> // ^^^!!!This part is the magic import!!!^^^
 >>>>> 
 >>>>> ReactDOM.render(<App />, document.getElementById('root'));
 >>>>> registerServiceWorker();
@@ -254,6 +253,7 @@
 >>>>> applyPolyfills().then(() => {
 >>>>>   defineCustomElements(window);
 >>>>> });
+>>>>> // ^^^!!!This part is the magic export!!!^^^
 >>>>> ``` 
 >>>> </details>
 
