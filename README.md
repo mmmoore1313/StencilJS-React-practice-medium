@@ -13,7 +13,7 @@
 >>  <summary>This is built following the stencil.js tutorial found at <a href="https://medium.com/stencil-tricks/creating-reusable-a-reusable-web-component-with-stenciljs-b2842af54c51">Creating a Reusable Web Component with StencilJS</a></summary>
 >> 
 >>> 
->>###### [Return to top](https://github.com/mmmoore1313/StencilJS-React-practice-medium)
+>> ###### [Return to top](https://github.com/mmmoore1313/StencilJS-React-practice-medium)
 >> </details>
 > ## Steps
 >> <details>
@@ -256,6 +256,78 @@
 >>>>> // ^^^!!!This part is the magic export!!!^^^
 >>>>> ``` 
 >>>> </details>
-
-
-
+>>>> <details>
+>>>>  <summary>4.5- Import component into <code>App.js</code></summary>
+>>>>
+>>>>> ``` 
+>>>>> import React from 'react';
+>>>>> import './App.css';
+>>>>> import 'mediumtutorial';
+>>>>> 
+>>>>> 
+>>>>> function App() {
+>>>>> 
+>>>>>   const array = [
+>>>>>     {
+>>>>>       label: 'Accordion 1',
+>>>>>       description: 'Lorem ipsum',
+>>>>>       color: '#439ECA',
+>>>>>       width: '300px'
+>>>>>     },
+>>>>>     {
+>>>>>       label: 'Accordion 2',
+>>>>>       description: 'Lorem ipsum',
+>>>>>       color: '#7EC74A',
+>>>>>       width: '300px'
+>>>>>     },
+>>>>>     {
+>>>>>       label: 'Accordion 3',
+>>>>>       description: 'Lorem ipsum',
+>>>>>       color: '#F8CD41',
+>>>>>       width: '300px'
+>>>>>     }
+>>>>>   ]
+>>>>>   return (
+>>>>>     <div className="App">
+>>>>>       {
+>>>>>         array.map((array) => {
+>>>>>           return (
+>>>>>             <my-accordion 
+>>>>>             label={array.label}
+>>>>>             description={array.description}
+>>>>>             color={array.color}
+>>>>>             width={array.width}>
+>>>>>             </my-accordion>
+>>>>>           )})
+>>>>>       }
+>>>>>     </div>
+>>>>>   );
+>>>>> }
+>>>>> 
+>>>>> export default App;
+>>>>> ``` 
+>>>> </details>
+>>>> <details>
+>>>>  <summary>Run the app</summary>
+>>>>
+>>>>> `npm start`
+>>>> </details>
+>>> </details>
+>> 
+>> </details>
+>
+> ## Technologies Used
+>> <details>
+>>  <summary>More later</summary>
+>>
+>>>
+>> ###### [Return to top](https://github.com/mmmoore1313/StencilJS-React-practice-medium)
+>> </details>
+>
+> ## Links
+>> <details>
+>>  <summary>More later</summary>
+>>
+>>> 
+>> ###### [Return to top](https://github.com/mmmoore1313/StencilJS-React-practice-medium)
+>> </details>
