@@ -208,5 +208,10 @@
 >>>>>> ``` 
 >>>>> </details>
 >>>> </details>
+>>> </details>
+>>> <details>
+>>>  <summary>4. Build the React app</summary>
+>>>
+>>>> *The completion of this app can be found (here)[]
 
 
