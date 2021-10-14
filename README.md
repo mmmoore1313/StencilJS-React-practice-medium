@@ -231,7 +231,7 @@
 >>>>  <summary>4.3- Install component package</summary>
 >>>>
 >>>>> ``` 
->>>>> npm install accordion-stencil-component --save
+>>>>> npm install mediumtutorial --save
 >>>>> ``` 
 >>>> </details>
 
