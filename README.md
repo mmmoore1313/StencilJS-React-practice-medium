@@ -212,6 +212,13 @@
 >>> <details>
 >>>  <summary>4. Build the React app</summary>
 >>>
->>>> *The completion of this app can be found (here)[]
+>>>> *The completion of this app can be found [here](https://github.com/mmmoore1313/StencilJS-React-practice-medium-part2)*  
+>>>> <details>
+>>>>  <summary>4.1- Create React App</summary>
+>>>>
+>>>>> ``` 
+>>>>> npx create-react-app appname
+>>>>> ``` 
+>>>> </details>
 
 
