@@ -12,7 +12,7 @@
 >> <details>
 >>  <summary>This is built following the stencil.js tutorial found at <a href="https://medium.com/stencil-tricks/creating-reusable-a-reusable-web-component-with-stenciljs-b2842af54c51">Creating a Reusable Web Component with StencilJS</a></summary>
 >> 
->>> 
+>>> This repo is used as a scrap repo to test all major infrastucural changes that will be made to SPEC-ods
 >> ###### [Return to top](https://github.com/mmmoore1313/StencilJS-React-practice-medium)
 >> </details>
 > ## Steps
