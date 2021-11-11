@@ -26,6 +26,8 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface PlainButton {
+    }
 }
 declare global {
     interface HTMLMyAccordionElement extends Components.MyAccordion, HTMLStencilElement {
@@ -40,9 +42,16 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLPlainButtonElement extends Components.PlainButton, HTMLStencilElement {
+    }
+    var HTMLPlainButtonElement: {
+        prototype: HTMLPlainButtonElement;
+        new (): HTMLPlainButtonElement;
+    };
     interface HTMLElementTagNameMap {
         "my-accordion": HTMLMyAccordionElement;
         "my-component": HTMLMyComponentElement;
+        "plain-button": HTMLPlainButtonElement;
     }
 }
 declare namespace LocalJSX {
@@ -67,9 +76,12 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface PlainButton {
+    }
     interface IntrinsicElements {
         "my-accordion": MyAccordion;
         "my-component": MyComponent;
+        "plain-button": PlainButton;
     }
 }
 export { LocalJSX as JSX };
@@ -78,6 +90,7 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-accordion": LocalJSX.MyAccordion & JSXBase.HTMLAttributes<HTMLMyAccordionElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "plain-button": LocalJSX.PlainButton & JSXBase.HTMLAttributes<HTMLPlainButtonElement>;
         }
     }
 }

@@ -244,7 +244,7 @@
 >>>>> import App from './App';
 >>>>> import registerServiceWorker from './registerServiceWorker';
 >>>>> 
->>>>> import { applyPolyfills, defineCustomElements } from 'accordion-stencil-component/loader';
+>>>>> import { applyPolyfills, defineCustomElements } from 'spec-/loader';
 >>>>> // ^^^!!!This part is the magic import!!!^^^
 >>>>> 
 >>>>> ReactDOM.render(<App />, document.getElementById('root'));
