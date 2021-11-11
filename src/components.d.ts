@@ -26,6 +26,12 @@ export namespace Components {
          */
         "middle": string;
     }
+    interface MyTable {
+    }
+    interface PerfectCell {
+    }
+    interface PerfectRow {
+    }
     interface PlainButton {
     }
 }
@@ -42,6 +48,24 @@ declare global {
         prototype: HTMLMyComponentElement;
         new (): HTMLMyComponentElement;
     };
+    interface HTMLMyTableElement extends Components.MyTable, HTMLStencilElement {
+    }
+    var HTMLMyTableElement: {
+        prototype: HTMLMyTableElement;
+        new (): HTMLMyTableElement;
+    };
+    interface HTMLPerfectCellElement extends Components.PerfectCell, HTMLStencilElement {
+    }
+    var HTMLPerfectCellElement: {
+        prototype: HTMLPerfectCellElement;
+        new (): HTMLPerfectCellElement;
+    };
+    interface HTMLPerfectRowElement extends Components.PerfectRow, HTMLStencilElement {
+    }
+    var HTMLPerfectRowElement: {
+        prototype: HTMLPerfectRowElement;
+        new (): HTMLPerfectRowElement;
+    };
     interface HTMLPlainButtonElement extends Components.PlainButton, HTMLStencilElement {
     }
     var HTMLPlainButtonElement: {
@@ -51,6 +75,9 @@ declare global {
     interface HTMLElementTagNameMap {
         "my-accordion": HTMLMyAccordionElement;
         "my-component": HTMLMyComponentElement;
+        "my-table": HTMLMyTableElement;
+        "perfect-cell": HTMLPerfectCellElement;
+        "perfect-row": HTMLPerfectRowElement;
         "plain-button": HTMLPlainButtonElement;
     }
 }
@@ -76,11 +103,20 @@ declare namespace LocalJSX {
          */
         "middle"?: string;
     }
+    interface MyTable {
+    }
+    interface PerfectCell {
+    }
+    interface PerfectRow {
+    }
     interface PlainButton {
     }
     interface IntrinsicElements {
         "my-accordion": MyAccordion;
         "my-component": MyComponent;
+        "my-table": MyTable;
+        "perfect-cell": PerfectCell;
+        "perfect-row": PerfectRow;
         "plain-button": PlainButton;
     }
 }
@@ -90,6 +126,9 @@ declare module "@stencil/core" {
         interface IntrinsicElements {
             "my-accordion": LocalJSX.MyAccordion & JSXBase.HTMLAttributes<HTMLMyAccordionElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
+            "my-table": LocalJSX.MyTable & JSXBase.HTMLAttributes<HTMLMyTableElement>;
+            "perfect-cell": LocalJSX.PerfectCell & JSXBase.HTMLAttributes<HTMLPerfectCellElement>;
+            "perfect-row": LocalJSX.PerfectRow & JSXBase.HTMLAttributes<HTMLPerfectRowElement>;
             "plain-button": LocalJSX.PlainButton & JSXBase.HTMLAttributes<HTMLPlainButtonElement>;
         }
     }
