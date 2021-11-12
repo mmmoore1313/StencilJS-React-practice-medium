@@ -19,6 +19,8 @@ jobs:
                   registry-url: https://registry.npmjs.org
           - name: version minor
             run: npm version minor
+            env:
+              NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
           - name: publish
             run: npm publish --access public
             env:
