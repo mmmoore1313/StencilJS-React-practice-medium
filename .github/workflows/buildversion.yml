@@ -1,4 +1,4 @@
-name: "Build and Version Update"
+name: "Version Update"
 
 on:
     push:
