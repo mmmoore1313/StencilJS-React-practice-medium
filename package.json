@@ -29,10 +29,10 @@
   "devDependencies": {
     "@babel/core": "^7.15.8",
     "@storybook/addon-actions": "^6.3.12",
-    "@storybook/addon-essentials": "^6.3.12",
+    "@storybook/addon-essentials": "^6.1.21",
     "@storybook/addon-links": "^6.3.12",
     "@storybook/addon-notes": "^5.3.21",
-    "@storybook/html": "^6.3.12",
+    "@storybook/html": "^6.1.21",
     "@types/jest": "^26.0.24",
     "babel-loader": "^8.2.3",
     "copy-webpack-plugin": "^9.0.1",
