@@ -1,0 +1,19 @@
+name: "Build and Version Update"
+
+on:
+    push:
+        branches:
+          - dev
+
+jobs:
+    release:
+        name: NPM version
+        runs-on: ubuntu-latest
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v2.4.0
+          - name: Setup Node.js environment
+            uses: actions/setup-node@v2.4.1
+            with:
+                  node-version: 16.13.0
+                  registry-url: https://registry.npmjs.org
