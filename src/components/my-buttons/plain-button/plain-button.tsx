@@ -12,7 +12,7 @@ export class PlainButton {
   render() {
     return (
       <div>
-        <button class="plainjane">
+        <button>
           <slot />
         </button>
       </div>
