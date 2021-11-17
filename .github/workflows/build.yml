@@ -3,8 +3,10 @@ name: "Run Build"
 on:
   push:
 
-runs-on: ubuntu-latest
-steps:
-  - uses: actions/checkout@v2
-  - name: npm run build on push
-    run: npm run build
+jobs:
+  run-npm-build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: npm run build on push
+      run: npm run build
