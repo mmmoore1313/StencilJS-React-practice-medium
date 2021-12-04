@@ -1,36 +1,18 @@
-name: "NPM publish"
-
+name: Node.js Package
 on:
     push:
         branches:
           - main
-
 jobs:
-    build:
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
+      # Setup .npmrc file to publish to npm
+      - uses: actions/setup-node@v2
         with:
-          node-version: '12.x'
-      - run: npm run build --if-present
-
-    release:
-        name: NPM publish
-        runs-on: ubuntu-latest
-        steps:
-          - name: Checkout
-            uses: actions/checkout@v2.4.0
-          - name: Setup Node.js environment
-            uses: actions/setup-node@v2.4.1
-            with:
-                  node-version: 16.13.0
-                  registry-url: https://registry.npmjs.org
-          - name: Update version in package.json
-            uses: maks-stupak/gh-action-bump-version@v7.1.5
-          - name: publish
-            run: npm publish --access public
-            env:
-              NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          node-version: '16.13.0'
+          registry-url: 'https://registry.npmjs.org'
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
