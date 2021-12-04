@@ -10,4 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - run: npm run build
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+      - name: Build
+        run: npm run build
